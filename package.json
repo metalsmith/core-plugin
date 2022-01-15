@@ -1,10 +1,10 @@
 {
-  "name": "@metalsmith/%core-plugin%",
+  "name": "@metalsmith/~core-plugin~",
   "private": true,
   "version": "0.1.0",
-  "description": "A Metalsmith %core-plugin% boilerplate",
+  "description": "A Metalsmith plugin to ...",
   "keywords": [
-    "%core-plugin%",
+    "~core-plugin~",
     "metalsmith-plugin",
     "metalsmith",
     "static-site"
@@ -12,7 +12,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metalsmith/%core-plugin%.git"
+    "url": "git+https://github.com/metalsmith/~core-plugin~.git"
   },
   "files": [
     "lib",
@@ -25,9 +25,9 @@
   "author": "Kevin Van Lierde (https://webketje.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/metalsmith/%core-plugin%/issues"
+    "url": "https://github.com/metalsmith/~core-plugin~/issues"
   },
-  "homepage": "https://github.com/metalsmith/%core-plugin%#readme",
+  "homepage": "https://github.com/metalsmith/~core-plugin~#readme",
   "dependencies": {
     "debug": "^4.3.3"
   },

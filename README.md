@@ -1,6 +1,13 @@
-# @metalsmith/%core-plugin%
+---
+Note: This is a template repository
+Usage: 
+  - step1: Click "Use this template", see also https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template, fill in new plugin details
+  - step2: Search and replace all `core-plugin` `CorePlugin` and `corePlugin` matches with the name of the plugin
+  - step3: Delete the front-matter in this file
+---
+# @metalsmith/~core-plugin~
 
-A metalsmith core plugin boilerplate
+A metalsmith plugin to...
 
 [![metalsmith: core plugin][metalsmith-badge]][metalsmith-url]
 [![npm: version][npm-badge]][npm-url]
@@ -14,22 +21,22 @@ A metalsmith core plugin boilerplate
 
 NPM:
 ```
-npm install @metalsmith/%core-plugin%
+npm install @metalsmith/~core-plugin~
 ```
 Yarn:
 ```
-yarn add @metalsmith/%core-plugin%
+yarn add @metalsmith/~core-plugin~
 ```
 
 ## Usage
 
-Pass `@metalsmith/%core-plugin%` to `metalsmith.use` :
+Pass `@metalsmith/~core-plugin~` to `metalsmith.use` :
 
 ```js
-const %corePlugin% = require('@metalsmith/%core-plugin%')
+const ~corePlugin~ = require('@metalsmith/~core-plugin~')
 
-metalsmith.use(corePlugin()) // defaults
-metalsmith.use(corePlugin({  // explicit defaults
+metalsmith.use(~corePlugin~()) // defaults
+metalsmith.use(~corePlugin~({  // explicit defaults
   ...
 }))
 ```
@@ -48,28 +55,28 @@ Document a second specific usage example
 
 ### Debug
 
-To enable debug logs, set the `DEBUG` environment variable to `@metalsmith/%core-plugin%`:
+To enable debug logs, set the `DEBUG` environment variable to `@metalsmith/~core-plugin~`:
 
 Linux/Mac:
 ```
-DEBUG=@metalsmith/%core-plugin%
+DEBUG=@metalsmith/~core-plugin~
 ```
 Windows:
 ```
-set "DEBUG=@metalsmith/%core-plugin%"
+set "DEBUG=@metalsmith/~core-plugin~"
 ```
 
 Alternatively you can set `DEBUG` to `@metalsmith/*` to debug all Metalsmith core plugins.
 
 ### CLI usage
 
-To use this plugin with the Metalsmith CLI, add `@metalsmith/%core-plugin%` to the `plugins` key in your `metalsmith.json` file:
+To use this plugin with the Metalsmith CLI, add `@metalsmith/~core-plugin~` to the `plugins` key in your `metalsmith.json` file:
 
 ```json
 {
   "plugins": [
     {
-      "@metalsmith/%core-plugin%": {}
+      "@metalsmith/~core-plugin~": {}
     }
   ]
 }
@@ -83,13 +90,13 @@ Special thanks to ... for ...
 
 [MIT](LICENSE)
 
-[npm-badge]: https://img.shields.io/npm/v/@metalsmith/%core-plugin%.svg
-[npm-url]: https://www.npmjs.com/package/@metalsmith/%core-plugin%
-[ci-badge]: https://app.travis-ci.com/metalsmith/%core-plugin%.svg?branch=master
-[ci-url]: https://app.travis-ci.com/github/metalsmith/%core-plugin%
+[npm-badge]: https://img.shields.io/npm/v/@metalsmith/~core-plugin~.svg
+[npm-url]: https://www.npmjs.com/package/@metalsmith/~core-plugin~
+[ci-badge]: https://app.travis-ci.com/metalsmith/~core-plugin~.svg?branch=master
+[ci-url]: https://app.travis-ci.com/github/metalsmith/~core-plugin~
 [metalsmith-badge]: https://img.shields.io/badge/metalsmith-core_plugin-green.svg?longCache=true
 [metalsmith-url]: https://metalsmith.io
-[codecov-badge]: https://img.shields.io/coveralls/github/metalsmith/%core-plugin%
-[codecov-url]: https://coveralls.io/github/metalsmith/%core-plugin%
-[license-badge]: https://img.shields.io/github/license/metalsmith/%core-plugin%
+[codecov-badge]: https://img.shields.io/coveralls/github/metalsmith/~core-plugin~
+[codecov-url]: https://coveralls.io/github/metalsmith/~core-plugin~
+[license-badge]: https://img.shields.io/github/license/metalsmith/~core-plugin~
 [license-url]: LICENSE

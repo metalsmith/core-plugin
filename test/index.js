@@ -9,7 +9,7 @@ function fixture(p) {
   return require('path').resolve(__dirname, 'fixtures', p)
 }
 
-describe('@metalsmith/core-plugin', function() {
+describe('@metalsmith/~core-plugin~', function() {
   it('should export a named plugin function matching package.json name', function() {
     const namechars = name.split('/')[1]
     const camelCased = namechars.split('')
@@ -17,7 +17,7 @@ describe('@metalsmith/core-plugin', function() {
         str += namechars[i - 1] === '-' ? char.toUpperCase() : char === '-' ? '' : char
         return str
       }, '')
-    assert.strictEqual(plugin().name, camelCased)
+    assert.strictEqual(plugin().name, camelCased.replace(/~/g, ''))
   })
   it('should not crash the metalsmith build when using default options', function(done) {
     Metalsmith(fixture('default'))
