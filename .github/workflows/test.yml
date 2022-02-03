@@ -16,7 +16,7 @@ jobs:
 
       - name: Linting
         run: npm run lint
-  
+
   branch-test:
     if: github.refname != 'master' && success()
     needs: pre-test
@@ -41,8 +41,8 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ 'ubuntu-latest', 'windows-latest' ]
-        node: [ '10', '12', '14', '16' ]
+        os: ['ubuntu-latest', 'windows-latest']
+        node: ['10', '12', '14', '16']
     name: Testing Node ${{ matrix.node }} on ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2

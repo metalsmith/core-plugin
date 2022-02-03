@@ -1,5 +1,4 @@
-on:
-  create
+on: create
 
 jobs:
   notify:
@@ -8,4 +7,3 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: curl --data-urlencode "message=[@${{github.repository}} ${{github.ref_name}}](${{github.repositoryUrl}/releases/latest) released" ${{secrets.GITTER_CUSTOM_WEBHOOK}}
-  
