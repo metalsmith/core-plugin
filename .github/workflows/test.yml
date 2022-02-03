@@ -18,7 +18,7 @@ jobs:
         run: npm run lint
 
   branch-test:
-    if: github.refname != 'master' && success()
+    if: github.ref_name != 'master' && success()
     needs: pre-test
     runs-on: ubuntu-latest
     steps:
@@ -36,7 +36,7 @@ jobs:
         run: npm run lint
 
   test:
-    if: github.refname == 'master' && success()
+    if: github.ref_name == 'master' && success()
     needs: pre-test
     runs-on: ${{ matrix.os }}
     strategy:
