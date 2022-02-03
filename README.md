@@ -1,10 +1,11 @@
 ---
 Note: This is a template repository
-Usage: 
+Usage:
   - step1: Click "Use this template", see also https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template, fill in new plugin details
   - step2: Search and replace all `core-plugin` `CorePlugin` and `corePlugin` matches with the name of the plugin
   - step3: Delete the front-matter in this file
 ---
+
 # @metalsmith/~core-plugin~
 
 A metalsmith plugin to...
@@ -20,10 +21,13 @@ A metalsmith plugin to...
 ## Installation
 
 NPM:
+
 ```
 npm install @metalsmith/~core-plugin~
 ```
+
 Yarn:
+
 ```
 yarn add @metalsmith/~core-plugin~
 ```
@@ -58,10 +62,13 @@ Document a second specific usage example
 To enable debug logs, set the `DEBUG` environment variable to `@metalsmith/~core-plugin~`:
 
 Linux/Mac:
+
 ```
 DEBUG=@metalsmith/~core-plugin~
 ```
+
 Windows:
+
 ```
 set "DEBUG=@metalsmith/~core-plugin~"
 ```
