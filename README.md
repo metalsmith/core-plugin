@@ -1,9 +1,12 @@
----
-Note: This is a template repository
+_Note: This is a template repository_
+
 Usage:
-  - step1: Click "Use this template", see also https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template, fill in new plugin details
-  - step2: Search and replace all `core-plugin` `CorePlugin` and `corePlugin` matches with the name of the plugin
-  - step3: Delete the front-matter in this file
+
+1. Click "Use this template", see also https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template, fill in new plugin details
+2. Search and replace all `core-plugin` `CorePlugin` and `corePlugin` matches with the name of the plugin
+3. Change description in package.json & match in repo description
+4. Remove this text
+
 ---
 
 # @metalsmith/~core-plugin~
@@ -16,7 +19,9 @@ A metalsmith plugin to...
 [![code coverage][codecov-badge]][codecov-url]
 [![license: MIT][license-badge]][license-url]
 
-\[Optional\] An extended description of the core plugin
+## Features
+
+An optional features section (if there are many), or an extended description of the core plugin
 
 ## Installation
 
@@ -45,17 +50,17 @@ metalsmith.use(~corePlugin~({  // explicit defaults
 }))
 ```
 
-### Options (optional)
+### Options
 
 Optional section with list or table of options, if the plugin has a lot of options
 
 ### Specific usage example
 
-Document a first specific usage example
+Document a first specific usage example, the title can be "Achieve x by doing y"
 
 ### Specific usage example
 
-Document a second specific usage example
+Document a second specific usage example, the title can be "Achieve x by doing y"
 
 ### Debug
 
@@ -99,8 +104,8 @@ Special thanks to ... for ...
 
 [npm-badge]: https://img.shields.io/npm/v/@metalsmith/~core-plugin~.svg
 [npm-url]: https://www.npmjs.com/package/@metalsmith/~core-plugin~
-[ci-badge]: https://app.travis-ci.com/metalsmith/~core-plugin~.svg?branch=master
-[ci-url]: https://app.travis-ci.com/github/metalsmith/~core-plugin~
+[ci-badge]: https://github.com/metalsmith/~core-plugin~/actions/workflows/test.yml/badge.svg
+[ci-url]: https://github.com/metalsmith/~core-plugin~/actions/workflows/test.yml
 [metalsmith-badge]: https://img.shields.io/badge/metalsmith-core_plugin-green.svg?longCache=true
 [metalsmith-url]: https://metalsmith.io
 [codecov-badge]: https://img.shields.io/coveralls/github/metalsmith/~core-plugin~
