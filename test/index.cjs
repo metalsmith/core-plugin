@@ -22,6 +22,7 @@ describe('@metalsmith/~core-plugin~', function () {
     Metalsmith(fixture('default'))
       .use(plugin())
       .build((err) => {
+        if (err) done(err)
         assert.strictEqual(err, null)
         equals(fixture('default/build'), fixture('default/expected'))
         done()
