@@ -17,6 +17,7 @@
     "import": "./lib/index.js",
     "require": "./lib/index.cjs"
   },
+  "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/metalsmith/~core-plugin~.git"
@@ -62,7 +63,7 @@
     "lint": "eslint --fix .",
     "lint:check": "eslint --fix-dry-run .",
     "release": "npm run build && release-it .",
-    "build": "microbundle --target node --no-sourcemap -f cjs,esm",
+    "build": "microbundle --target node --no-sourcemap -f cjs,esm --strict --generateTypes=false",
     "pretest": "npm run build",
     "test": "nyc mocha"
   },
