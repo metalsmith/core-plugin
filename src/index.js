@@ -28,7 +28,7 @@ function doSomething(file, path) {
  * @param {Options} options
  * @returns {import('metalsmith').Plugin}
  */
-function initCorePlugin(options) {
+function corePlugin(options) {
   options = normalizeOptions(options)
 
   return function corePlugin(files, metalsmith, done) {
@@ -47,4 +47,4 @@ function initCorePlugin(options) {
   }
 }
 
-export default initCorePlugin
+export default corePlugin
