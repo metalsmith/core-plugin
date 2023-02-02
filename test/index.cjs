@@ -3,7 +3,7 @@ const equals = require('assert-dir-equal')
 const { describe, it } = require('mocha')
 const Metalsmith = require('metalsmith')
 const { name } = require('../package.json')
-// eslint-disable-next-line node/no-missing-require
+// eslint-disable-next-line
 const plugin = require('../lib/index.cjs')
 
 function fixture(p) {
