@@ -42,7 +42,7 @@ yarn add @metalsmith/~core-plugin~
 Pass `@metalsmith/~core-plugin~` to `metalsmith.use` :
 
 ```js
-const ~corePlugin~ = require('@metalsmith/~core-plugin~')
+import ~corePlugin~ from '@metalsmith/~core-plugin~'
 
 metalsmith.use(~corePlugin~()) // defaults
 metalsmith.use(~corePlugin~({  // explicit defaults
@@ -64,18 +64,10 @@ Document a second specific usage example, the title can be "Achieve x by doing y
 
 ### Debug
 
-To enable debug logs, set the `DEBUG` environment variable to `@metalsmith/~core-plugin~`:
+To enable debug logs, set the `DEBUG` environment variable to `@metalsmith/~core_plugin~*`:
 
-Linux/Mac:
-
-```
-DEBUG=@metalsmith/~core-plugin~
-```
-
-Windows:
-
-```
-set "DEBUG=@metalsmith/~core-plugin~"
+```js
+metalsmith.env('DEBUG', '@metalsmith/~core_plugin~*')
 ```
 
 Alternatively you can set `DEBUG` to `@metalsmith/*` to debug all Metalsmith core plugins.
