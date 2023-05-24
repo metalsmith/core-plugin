@@ -23,7 +23,8 @@
     "url": "git+https://github.com/metalsmith/~core-plugin~.git"
   },
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "directories": {
     "lib": "lib",
@@ -63,7 +64,7 @@
     "lint": "eslint --fix .",
     "lint:check": "eslint --fix-dry-run .",
     "release": "npm run build && release-it .",
-    "build": "microbundle --target node --no-sourcemap -f cjs,esm --strict --generateTypes=false",
+    "build": "microbundle --target node -f cjs,esm --strict --generateTypes=false",
     "pretest": "npm run build",
     "test": "c8 mocha"
   },
