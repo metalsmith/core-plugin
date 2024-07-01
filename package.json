@@ -36,9 +36,6 @@
     "url": "https://github.com/metalsmith/~core-plugin~/issues"
   },
   "homepage": "https://github.com/metalsmith/~core-plugin~#readme",
-  "dependencies": {
-    "debug": "^4.3.4"
-  },
   "devDependencies": {
     "assert-dir-equal": "^1.1.0",
     "auto-changelog": "^2.4.0",
@@ -55,7 +52,7 @@
     "release-it": "^17.4.1"
   },
   "peerDependencies": {
-    "metalsmith": "^2.5.0"
+    "metalsmith": "^2.6.3"
   },
   "scripts": {
     "changelog": "auto-changelog -u --commit-limit false --ignore-commit-pattern '^((dev|chore|ci):|Release)'",
