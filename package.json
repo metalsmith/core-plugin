@@ -52,7 +52,7 @@
     "release-it": "^19.2.4"
   },
   "peerDependencies": {
-    "metalsmith": "^2.6.3"
+    "metalsmith": "^2.7.0"
   },
   "scripts": {
     "changelog": "auto-changelog -u --commit-limit false --ignore-commit-pattern '^((dev|chore|ci):|Release)'",
@@ -67,7 +67,7 @@
     "test": "c8 mocha"
   },
   "engines": {
-    "node": ">=14.14.0"
+    "node": ">=16.0.0"
   },
   "publishConfig": {
     "access": "public"
